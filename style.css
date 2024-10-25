@@ -96,7 +96,7 @@ transition: all .5s ease;
 position: relative;
 }
 
-.sixth::after{
+.sixth:hover::after{
     content: "";
     position: absolute;
 width: 100%;
@@ -107,9 +107,10 @@ background-color: brown;
 transform: rotate(60deg);
 z-index: -1;
 border-radius:15px;
+transition: all 1s linear;
 }
 
-.sixth::before{
+.sixth:hover::before{
     content: "";
     position: absolute;
 width: 100%;
@@ -120,6 +121,8 @@ background-color: brown;
 transform: rotate(-60deg);
 z-index: -1;
 border-radius: 15px;
+transition: all 1s linear;
+transition-behavior: smooth;
 }
 
 
